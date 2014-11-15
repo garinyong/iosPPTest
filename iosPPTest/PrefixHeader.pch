@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  iosPPTest
+//
+//  Created by gaoyong on 14-9-25.
+//  Copyright (c) 2014年 gaoyong. All rights reserved.
+//
+
+#import "BaseViewController.h"
+#import "FrameFitTool.h"
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define COEFFICIENT_Y   (SCREEN_4_INCH ? 1.183 : 1)     // 视图控件y轴偏移量系数
+#define SCREEN_4_INCH   (SCREEN_HEIGHT == 568)     // 4寸Retina
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
